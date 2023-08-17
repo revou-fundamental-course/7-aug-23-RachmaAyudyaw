@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Hitung Segitiga</h1>
+      <p>Disini kamu  bisa hitung Luas dan Kelilng Segitiga</p>
+      <nav>
+        <button onclick="luas()">Hitung Luas Segitiga</button>
+        <button onclick="keliling()">Hitung Keliling Segitiga</button>
+      </nav>
+    </header>
+    <main>
+      <div id="luas">
+        <h2>Luas Segitiga</h2>
+        <section class="info">
+          <img src="image/segitiga.JPG" alt="gambar segitiga" />
+          <div class="info_rumus">
+            <p>Rumus Luas segitiga yaitu:</p>
+            <p class="info_rumus_tengah">L = 1/2 x a x t</p>
+            <p>Di mana:</p>
+            <p>L = Luas</p>
+            <p>a = Panjang Atas</p>
+            <p>t = Tinggi</p>
+          </div>
+
+          <hr />
+        </section>
+        <section class="input">
+          <div class="input_judul">
+            <h2>Hitung Luas Segitiga</h2>
+          </div>
+          <div class="input_isi">
+            <input type="number" placeholder="Nilai Alas" id="alas" required />
+            <input
+              type="number"
+              placeholder="Nilai Tinggi"
+              id="tinggi"
+              required
+            />
+            <input
+              type="submit"
+              value="Hitung"
+              class="hitung"
+              id="hitungLuas"
+            />
+          </div>
+          <div id="hasilLuasID"></div>
+        </section>
+      </div>
+
+      <div id="keliling">
+        <h2>Keliling Segitiga</h2>
+        <section class="info">
+          <img src="image/segitiga.JPG" alt="gambar segitiga" />
+          <div class="info_rumus">
+            <p>Rumus keliling segitiga yaitu:</p>
+            <p class="info_rumus_tengah">K= S1 + S2 + S3</p>
+            <p>Di mana:</p>
+            <p>K = Keliling</p>
+            <p>S1 = Sisi A</p>
+            <p>S2 = Sisi B</p>
+            <p>S3 = Sisi C</p>
+          </div>
+
+          <hr />
+        </section>
+        <section class="input">
+          <div class="input_judul">
+            <h1>Hitung keliling Segitiga</h1>
+          </div>
+          <div class="input_isi">
+            <input
+              type="number"
+              placeholder="Nilai Sisi 1"
+              id="sisi_satu"
+              required
+            />
+            <input
+              type="number"
+              placeholder="Nilai Sisi 2"
+              id="sisi_dua"
+              required
+            />
+            <input
+              type="number"
+              placeholder="Nilai Sisi 3"
+              id="sisi_tiga"
+              required
+            />
+            <input
+              type="submit"
+              value="Hitung"
+              class="hitung"
+              id="hitungKeliling"
+            />
+          </div>
+          <div id="hasilKeliling"></p>
+        </section>
+      </div>
+
+      <section class="reset">
+        <button id="reset">Reset</button>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

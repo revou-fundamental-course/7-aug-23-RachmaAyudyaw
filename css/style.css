@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body{
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* header */
+header{
+    margin:10px auto;
+}
+
+header > h1{
+    text-align: center;
+    padding: 5px;
+    background-color: aqua;
+    margin-bottom: 5px;
+}
+
+header > p{
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav > button{
+    padding:5px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(219, 219, 219);
+}
+
+button:focus{
+    background-color: rgb(182, 182, 182);;
+}
+
+
+/* div luas */
+#luas > h2, #keliling > h2{
+    border: 1px solid black;
+    padding: 25px;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* info */
+.info{
+    margin:5px;
+}
+
+img{
+   display: block;
+   margin: 0 auto;
+}
+
+p.info_rumus_tengah{
+    text-align: center;
+    line-height: 30px;
+}
+
+.info_rumus > p{
+    line-height: 25px;
+}
+
+
+/* input */
+.input{
+   margin: 7px;
+}
+
+.input_judul{
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.input_isi{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input_isi > input{
+    margin-bottom: 7px;
+    padding: 5px;
+}
+
+#warning_at, #warning_sisi{
+    margin-bottom: 5px;
+    color:red;
+}
+
+.hitung{
+    background-color: blue;
+    padding:5px 10px;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* reset */
+
+.reset{
+    text-align: end;
+    margin: 7px;
+}
+.reset > button{
+    padding:5px 10px;
+    color:white;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width:768px) {
+    body{
+        width: 50%;
+    }
+}
